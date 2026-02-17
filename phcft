@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Nestlé India - Good Food, Good Life</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#005494",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1a23",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Work Sans', sans-serif; scroll-behavior: smooth; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        /* Prevent content cut-off by bottom nav */
+        .page-wrapper { padding-bottom: 5rem; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+
+<div class="page-wrapper">
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+            <button aria-label="Open Menu" class="flex items-center justify-center p-1 text-primary dark:text-white">
+                <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+            <div class="flex items-center">
+                <span class="text-primary dark:text-white font-bold text-xl tracking-tight">Nestlé</span>
+                <span class="ml-1 text-xs font-medium text-primary/70 dark:text-white/70 uppercase tracking-widest">India</span>
+            </div>
+        </div>
+        <div class="flex items-center gap-3">
+            <button aria-label="Search" class="flex items-center justify-center p-2 rounded-full hover:bg-primary/5 dark:hover:bg-white/5 transition-colors">
+                <span class="material-symbols-outlined text-primary dark:text-white">search</span>
+            </button>
+            <button aria-label="Profile" class="hidden sm:flex items-center justify-center p-2 rounded-full hover:bg-primary/5 dark:hover:bg-white/5 transition-colors">
+                <span class="material-symbols-outlined text-primary dark:text-white">person</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-screen-md mx-auto">
+        <section class="p-4">
+            <div class="relative overflow-hidden rounded-xl bg-primary text-white shadow-xl aspect-[16/10] sm:aspect-[21/9] flex items-center">
+                <div class="absolute inset-0 z-0 opacity-40 bg-center bg-cover" style="background-image: url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&q=80&w=1000');"></div>
+                <div class="absolute inset-0 z-0 bg-gradient-to-r from-primary via-primary/60 to-transparent"></div>
+                <div class="relative z-10 p-6 md:p-10 w-full max-w-lg">
+                    <span class="inline-block px-2 py-1 mb-3 rounded bg-white/20 backdrop-blur-sm text-[10px] font-bold uppercase tracking-widest">New Feature</span>
+                    <h1 class="text-2xl md:text-4xl font-bold leading-tight mb-2">AskNestlé</h1>
+                    <p class="text-sm md:text-base text-white/90 mb-6 leading-relaxed">Personalized nutrition advice and expert guidance for your family's daily wellness journey.</p>
+                    <button class="bg-white text-primary font-bold px-6 py-2.5 rounded-lg text-sm transition-transform hover:bg-slate-100 active:scale-95 shadow-lg">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-4 py-2">
+            <div class="bg-primary/5 dark:bg-primary/20 border border-primary/20 rounded-xl p-4 flex items-start gap-4 shadow-sm">
+                <div class="bg-primary rounded-lg p-2 flex items-center justify-center text-white shrink-0">
+                    <span class="material-symbols-outlined">lightbulb</span>
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-primary dark:text-blue-300 uppercase tracking-wider">Quick Nutrition Tip</h3>
+                    <p class="text-sm text-slate-700 dark:text-slate-300 mt-1">A balanced breakfast rich in whole grains can improve concentration levels throughout your morning by up to 20%.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-4 py-6">
+            <div class="grid grid-cols-2 gap-4">
+                <a class="group bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col items-center text-center transition-all hover:shadow-md hover:border-primary/20" href="#">
+                    <div class="w-12 h-12 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-blue-400 mb-3 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-2xl">shopping_bag</span>
+                    </div>
+                    <span class="text-sm font-bold text-slate-800 dark:text-slate-200">Our Brands</span>
+                </a>
+                <a class="group bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col items-center text-center transition-all hover:shadow-md hover:border-primary/20" href="#">
+                    <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400 mb-3 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-2xl">health_and_safety</span>
+                    </div>
+                    <span class="text-sm font-bold text-slate-800 dark:text-slate-200">Nutrition & Wellness</span>
+                </a>
+                </div>
+        </section>
+    </main>
+
+    <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 mt-8 pt-10 pb-28">
+        <div class="max-w-screen-md mx-auto px-6">
+            <div class="mb-8 text-center sm:text-left">
+                <div class="flex items-center justify-center sm:justify-start mb-4">
+                    <span class="text-primary dark:text-white font-bold text-xl tracking-tight">Nestlé</span>
+                    <span class="ml-1 text-xs font-medium text-primary/70 dark:text-white/70 uppercase tracking-widest">India</span>
+                </div>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Good food, Good life. Dedicated to providing the best nutrition, health and wellness in India.</p>
+            </div>
+            <p class="text-center text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-widest">
+                © 2024 Nestlé India Limited. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</div>
+
+<nav class="fixed bottom-0 left-0 right-0 bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 flex justify-around items-center px-4 py-3 z-50">
+    <a class="flex flex-col items-center gap-1 text-primary" href="#">
+        <span class="material-symbols-outlined fill-[1]">home</span>
+        <span class="text-[10px] font-bold">Home</span>
+    </a>
+    <a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#">
+        <span class="material-symbols-outlined">category</span> <span class="text-[10px] font-bold">Brands</span>
+    </a>
+    <a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="#">
+        <span class="material-symbols-outlined">auto_stories</span> <span class="text-[10px] font-bold">Stories</span>
+    </a>
+</nav>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
